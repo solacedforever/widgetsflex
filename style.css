@@ -25,18 +25,13 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     background-image: url( "./img/bg.jpg" );
     line-height: 1.6;
-    margin: 0;
+    margin:0;
     padding-top: 20px;
     border-radius:20px;
+    padding-left: 20px;
+
 }
-body>div {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  padding: 20px;
-  border-radius:20px;
-}
+
 img{
     max-width: 100%;
     display: block;
@@ -45,9 +40,13 @@ img{
 }
 .wrapper{
     background-color: #F5FFEB;
+    width: 70%;
+    border-radius:20px;
+    margin:0 auto;
 
-    /** TODO 1: Center the site on the screen and style it to match the mockup **/
 }
+    /** TODO 1: Center the site on the screen and style it to match the mockup **/
+
 
 /*************************/
 /**** HEADER STYLES ******/
@@ -63,20 +62,35 @@ flex containers to make their children flex items
 
 #site_header{
     background-color: #262425;
-    padding: 20px;
+    padding: 30px;
     display:flex;
-    justify-content:flex-end;
+    justify-content:space-between;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+
+
 
     /* #site_header styles here */
 }
 #logo{
+  display:flex;
+  color:white;
+  font-size:30px;
+  text-decoration:none;
+
     /* #logo styles here */
 }
 #main_nav{
+  padding-top:15px;
     /* #main_nav styles here */
 }
 #main_nav a{
     background-color: #E57727;
+    color:white;
+    border-radius:10px;
+    padding:15px;
+    text-decoration:none;
     /* #navigation button styles here */
 }
 #main_nav a:hover{
@@ -89,6 +103,8 @@ flex containers to make their children flex items
 #call_to_action{
     background-color: #BA3610;
     padding: 20px;
+    display:flex;
+    flex-direction:row;
 
     /* parent styles here */
 }
@@ -119,6 +135,7 @@ flex containers to make their children flex items
 #featured_products{
     padding: 20px;
     margin-bottom: 40px;
+
 }
 
 /**
@@ -133,17 +150,23 @@ flex containers to make their children flex items
     list-style: none;
     padding: 0;
     margin: 0;
+    display:flex;
+    flex-direction:row;
+    align-content:stretch;
+
 
     /* flexible parent styles here */
 }
 #featured_products li{
+  padding:10px;
+  width:50%;
     /* list item styles here */
 }
 #featured_products li img{
     border-radius: 4px;
+
 }
 #featured_products h2{
-    /* TODO 4: Match the styles of the h2 to the mockup */
 }
 #featured_products p{
     margin-top: 0;
@@ -159,6 +182,8 @@ flex containers to make their children flex items
 /**** FOOTER STYLES ******/
 /*************************/
 #site_footer{
+    display:flex;
+    justify-content:center;
     width: 1000px;
     margin: 0 auto;
 }
