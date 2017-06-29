@@ -58,7 +58,7 @@ flex containers to make their children flex items
     padding: 20px;
     display:flex;
     justify-content:flex-end;
-
+    
     /* #site_header styles here */
 }
 #logo{
