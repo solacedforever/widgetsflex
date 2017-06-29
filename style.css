@@ -27,6 +27,7 @@ body{
     line-height: 1.6;
     margin: 0;
     padding-top: 20px;
+
 }
 img{
     max-width: 100%;
@@ -36,7 +37,7 @@ img{
 }
 .wrapper{
     background-color: #F5FFEB;
-    
+
     /** TODO 1: Center the site on the screen and style it to match the mockup **/
 }
 
@@ -55,6 +56,8 @@ flex containers to make their children flex items
 #site_header{
     background-color: #262425;
     padding: 20px;
+    display:flex;
+    justify-content:flex-end;
 
     /* #site_header styles here */
 }
@@ -90,7 +93,7 @@ flex containers to make their children flex items
 #call_to_action h1, #call_to_action p{
     color: white;
 }
-#call_to_action a{   
+#call_to_action a{
     background-color: #E57727;
     display: inline-block;
     padding: 12px 18px;
@@ -100,7 +103,7 @@ flex containers to make their children flex items
 }
 #call_to_action a:hover{
     background-color: #278A96;
-} 
+}
 
 /***************************/
 /**** FEATURED STYLES ******/
